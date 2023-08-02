@@ -82,9 +82,12 @@ const signupController = async (req, res) => {
       // console.log(err);
       return res.status(400).send({ status: "error", message: err.message });
     }
-} 
-
-const home=async(req,res)=>{
-  res.status(200).send({msg:"sucess"});
 }
-  module.exports= {signupController,loginController,home}
+const API_KEY="b9e173ac-36c3-4f16-8a73-ce5ccd055dc8";
+const home=async(req,res)=>{
+ 
+}
+const addcrypto=async(req,res)=>{
+  console.log(req.body);
+}
+  module.exports= {signupController,loginController,home,addcrypto};
